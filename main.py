@@ -1,14 +1,14 @@
 class House:
-    def __init__(self, name, floors):
+    def __init__(self, name, number_of_floors):
         self.name = name
-        self.floors = floors
+        self.number_of_floors = number_of_floors #floors было
 
-    def Gt (self , New):
-        if 0 < New <= self.floors:
-            for f in range(1, New+1):
+    def Gt (self , new_floor):
+        if 0 < new_floor <= self.number_of_floors:
+            for f in range(1, new_floor+1): #New было
                 print(f)
         else:
-                print("Floor is not defined")
+                print("Нет такого этажа") #Floor is not defined было
 
 
 h1 = House('Doctrine', 10)
